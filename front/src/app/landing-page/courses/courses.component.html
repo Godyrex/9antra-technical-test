@@ -1,0 +1,23 @@
+<section id="courses" class="container mt-4">
+  <!-- Header Row -->
+  <div class="row align-items-center mb-3">
+    <h2 class="col-md-10">Discover Our Courses</h2>
+      <button class=" col-md-2 btn btn-sm btn-primary" href="#" role="button">View More</button>
+  </div>
+
+  <!-- Courses Row -->
+  <div class="row">
+    <div class="col-md-4 mb-2" *ngFor="let course of courses">
+      <div class="card">
+        <img
+          [src]="'assets/defaultCourse.png'"
+          class="card-img-top"
+          alt="{{course.title}}">
+        <div class="card-body">
+          <h5 class="card-title">{{course.title}}</h5>
+          <p class="card-text">{{course.price}} DT/ Month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
