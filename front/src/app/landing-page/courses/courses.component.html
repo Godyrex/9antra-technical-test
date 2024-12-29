@@ -10,7 +10,7 @@
     <div class="col-md-4 mb-2" *ngFor="let course of courses">
       <div class="card">
         <img
-          [src]="'assets/defaultCourse.png'"
+          [src]="course.imageBlob||'assets/defaultCourse.png'"
           class="card-img-top"
           alt="{{course.title}}">
         <div class="card-body">
